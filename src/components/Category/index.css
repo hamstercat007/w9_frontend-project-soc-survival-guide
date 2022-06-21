@@ -1,0 +1,10 @@
+
+.item {
+  flex-direction: row;
+  width: 30%;
+  padding: 2rem;
+}
+
+.item img {
+  width: 100%;
+}
