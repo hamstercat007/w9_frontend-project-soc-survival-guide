@@ -7,6 +7,7 @@ function App() {
       <h1>SoC Survival Guide</h1>
       <p>Helping bootcampers get through the journey</p>
       <CategoryList />
+
     </div>
   );
 }
