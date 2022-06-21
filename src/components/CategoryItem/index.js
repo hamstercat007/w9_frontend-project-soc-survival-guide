@@ -14,7 +14,7 @@ function CategoryItem ({category}){
         <p>
             {category.description}
         </p>
-        <button>
+        <button onClick={category.linkTo}>
             {category.buttonText}
         </button>
         <img src={category.imageURL} alt={category.title + " image"} />
