@@ -1,5 +1,5 @@
 import "./App.css";
-import CategoryList from "../CategoryItem";
+import CategoryList from "../CategoryList";
 
 function App() {
   return (
