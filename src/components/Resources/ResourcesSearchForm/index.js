@@ -36,8 +36,6 @@ function ResourcesSearchForm({
         handleChange={handleChange}
       />
       <button onClick={handleClick}>Search</button>
-      <h2>{categorySearch}</h2>
-      <p>{searchResults.payload[0].headline}</p>
     </section>
   );
 }
