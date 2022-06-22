@@ -11,7 +11,7 @@ import "./index.css";
 function Mindset() {
   return (
     <div>
-      <h1>Mindset</h1>
+      <h1 className="mindset-h1">Mindset</h1>
       <div className="flexRowMindset">
         <div className="halfSize">
           <img
@@ -50,7 +50,6 @@ function Mindset() {
         </div>
       </div>
     </div>
-
   );
 }
 
