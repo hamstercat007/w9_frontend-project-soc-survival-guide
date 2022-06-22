@@ -1,6 +1,7 @@
 import ResourcesSearchForm from "./ResourcesSearchForm";
 import { useEffect, useState } from "react";
 import SearchResults from "./SearchResults";
+import SubmitResource from "./SubmitResource";
 
 function Resources() {
   const [searchResults, setSearchResults] = useState([]);
@@ -46,6 +47,7 @@ function Resources() {
         handleChange={handleChange}
       />
    <SearchResults searchResults={searchResults} />
+   <SubmitResource />
     </main>
   );
 }
