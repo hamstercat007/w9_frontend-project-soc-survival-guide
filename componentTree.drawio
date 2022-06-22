@@ -9,7 +9,7 @@
                 </mxCell>
                 <mxCell id="12" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" target="5">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="320.544" y="140" as="sourcePoint"/>
+                        <mxPoint x="533.424" y="140" as="sourcePoint"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="13" style="edgeStyle=orthogonalEdgeStyle;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="3">
@@ -34,14 +34,26 @@
                 <mxCell id="3" value="Resources" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="-10.000000000000028" y="164" width="88.32" height="36" as="geometry"/>
                 </mxCell>
+                <mxCell id="45" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=10;" edge="1" parent="1" source="4" target="39">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=10;" edge="1" parent="1" source="4" target="40">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=10;" edge="1" parent="1" source="4" target="41">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=10;" edge="1" parent="1" source="4" target="42">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
                 <mxCell id="4" value="Self-care" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="277.12" y="164" width="88.32" height="36" as="geometry"/>
+                    <mxGeometry x="520" y="164" width="88.32" height="36" as="geometry"/>
                 </mxCell>
                 <mxCell id="11" style="html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="2" target="4">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="5" value="Mindset" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="431.68" y="164" width="88.32" height="36" as="geometry"/>
+                    <mxGeometry x="1080" y="164" width="88.32" height="36" as="geometry"/>
                 </mxCell>
                 <mxCell id="22" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="16">
                     <mxGeometry relative="1" as="geometry">
@@ -115,6 +127,24 @@
                 </mxCell>
                 <mxCell id="36" value="Submit Button" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
                     <mxGeometry x="276.38" y="380" width="88.32" height="36" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="Break Timer" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="330" y="240" width="88.32" height="36" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="Squat Timer" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="470" y="240" width="88.32" height="36" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="Squat Counter" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="580" y="240" width="88.32" height="36" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=10;" edge="1" parent="1" source="42" target="43">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="Card of&amp;nbsp; video links" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="690" y="240" width="88.32" height="36" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="Links" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="690" y="300" width="88.32" height="36" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
