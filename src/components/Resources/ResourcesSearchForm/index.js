@@ -14,6 +14,7 @@ function ResourcesSearchForm() {
     let initialArray = ["html","css","javascript","nodejs","react","figma","testing"]
     const [categorySearch, setCategorySearch] = useState()
     const [categoryArray, setCategoryArray] = useState(initialArray)
+    const [searchResults, setSearchResults] = useState({payload:"Hi There"})
 
     const handleChange = e => {
         const target = e.target;
@@ -22,11 +23,18 @@ function ResourcesSearchForm() {
         }
      };
 
+    async function handleClick() {
+        const response = await fetch(`localhost:3001/resources?category=${categorySearch}`);
+        const data = await response.json();
+        return data
+    }
+
     return(
         <section>
             <RadioCategorySection categoryArray={categoryArray} categorySearch={categorySearch} handleChange={handleChange}/>
-            <button type="button">Search</button>
+            <button type="button" onClick={handleClick}>Search</button>
             <h2>{categorySearch}</h2>
+            <p>{searchResults.payload}</p>
         </section>
 
     )
