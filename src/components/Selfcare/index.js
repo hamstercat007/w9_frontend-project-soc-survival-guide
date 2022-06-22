@@ -29,6 +29,15 @@ function MyTimer({ expiryTimestamp }) {
             time.setSeconds(time.getSeconds() + 10);
             restart(time)
           }}>Restart</button>
+          <img></img>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <ul>
+            <li></li>
+          </ul>
         </div>
       );
     }
