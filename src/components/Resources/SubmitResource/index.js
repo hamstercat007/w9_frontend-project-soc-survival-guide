@@ -26,7 +26,7 @@ function SubmitResource() {
     });
   }
   return (
-      <form method="POST" className="flexed">
+      <form method="POST" className="submitFlex">
         <label htmlFor="headline" className="inputFields">
           Headline
         </label>
@@ -76,6 +76,7 @@ function SubmitResource() {
           onChange={handleChange}
         ></input>
         </div>
+        <div>
         <label htmlFor="format" className="inputFields">
           Format
         </label>
@@ -87,6 +88,7 @@ function SubmitResource() {
           className="inputFields"
           onChange={handleChange}
         ></input>
+        </div>
         <button type="button" onClick={handleSubmit} className="inputFields">
           Submit
         </button>

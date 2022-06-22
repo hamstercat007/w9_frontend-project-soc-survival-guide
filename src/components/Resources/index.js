@@ -2,7 +2,7 @@ import ResourcesSearchForm from "./ResourcesSearchForm";
 import { useEffect, useState } from "react";
 import SearchResults from "./SearchResults";
 import SubmitResource from "./SubmitResource";
-import "./index.css"
+import "./index.css";
 
 function Resources() {
   const [searchResults, setSearchResults] = useState([]);
@@ -22,8 +22,8 @@ function Resources() {
       `http://localhost:3001/resources?category=${categorySearch}`
     );
     const data = await response.json();
-    console.log("data.payload")
-    console.log(data.payload)
+    console.log("data.payload");
+    console.log(data.payload);
     setSearchResults(data.payload);
   }
 
@@ -42,15 +42,15 @@ function Resources() {
     <div>
       <h1>Brush up on your tech skills</h1>
       <div className="flex-container">
-      <ResourcesSearchForm
-        searchResults={searchResults}
-        handleClick={handleClick}
-        categorySearch={categorySearch}
-        handleChange={handleChange}
-      />
-   <SearchResults searchResults={searchResults} />
-   </div>
-   <SubmitResource />
+        <ResourcesSearchForm
+          searchResults={searchResults}
+          handleClick={handleClick}
+          categorySearch={categorySearch}
+          handleChange={handleChange}
+        />
+          <SearchResults searchResults={searchResults} />
+      </div>
+      <SubmitResource />
     </div>
   );
 }

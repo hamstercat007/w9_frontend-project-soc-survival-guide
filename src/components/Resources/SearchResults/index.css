@@ -1,17 +1,13 @@
 .searchResults{
-  padding: 1rem 0 0 0;
+  padding: 0;
   border: 3px solid black;
-  width: 40vw;
-  margin: 1rem auto;
+  margin: 1.5rem 0.5rem;
   border-radius: 10px;
   box-shadow: 3px 5px;
-  display:flex;
+  width: 25vh;
 }
 
 .searchResults:hover {
   background-color: rgba(8, 249, 24, 0.86);
 }
 
-.flex-50 {
-  width: 47%
-}
