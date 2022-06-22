@@ -4,8 +4,9 @@ import Quote from "../Quote";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Mindset from "../Mindset";
 import Resources from "../Resources";
-import Selfcare from "../Selfcare";
+// import Selfcare from "../Selfcare";
 import { Fragment } from 'react';
+import MyTimer from "../Selfcare";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
           <Quote /> </>} />
           <Route path="/mindset" element={<Mindset />} />
           <Route path="/resources" element={<Resources />} />
-          <Route path="/selfcare" element={<Selfcare />} />
+          <Route path="/selfcare" element={<MyTimer />} />
         </Routes>
       </BrowserRouter>
     </div>
