@@ -1,0 +1,11 @@
+.inputFields {
+  padding: 5px;
+  margin: 5px;
+
+}
+
+.flexed {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

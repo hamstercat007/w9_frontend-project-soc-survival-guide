@@ -5,8 +5,13 @@
   margin: 1rem auto;
   border-radius: 10px;
   box-shadow: 3px 5px;
+  display:flex;
 }
 
 .searchResults:hover {
   background-color: rgba(8, 249, 24, 0.86);
+}
+
+.flex-50 {
+  width: 47%
 }

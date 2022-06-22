@@ -2,6 +2,7 @@ import ResourcesSearchForm from "./ResourcesSearchForm";
 import { useEffect, useState } from "react";
 import SearchResults from "./SearchResults";
 import SubmitResource from "./SubmitResource";
+import "./index.css"
 
 function Resources() {
   const [searchResults, setSearchResults] = useState([]);
@@ -38,8 +39,9 @@ function Resources() {
   }
 
   return (
-    <main>
+    <div>
       <h1>Brush up on your tech skills</h1>
+      <div className="flex-container">
       <ResourcesSearchForm
         searchResults={searchResults}
         handleClick={handleClick}
@@ -47,8 +49,9 @@ function Resources() {
         handleChange={handleChange}
       />
    <SearchResults searchResults={searchResults} />
+   </div>
    <SubmitResource />
-    </main>
+    </div>
   );
 }
 
