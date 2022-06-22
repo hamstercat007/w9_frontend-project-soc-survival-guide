@@ -58,7 +58,7 @@ function CategoryList() {
     <div>
     <h1>SoC Survival Guide</h1>
     <p>Helping bootcampers get through the journey</p>
-    <div className="flexed">
+    <div className="flexCategory">
       {categoryArray.map(function (item, index) {
         return <CategoryItem category={item} key={index} />;
       })}
