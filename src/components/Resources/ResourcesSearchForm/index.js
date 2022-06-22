@@ -12,14 +12,21 @@ import RadioCategorySection from "../RadioCategorySection"
 
 function ResourcesSearchForm() {
     let initialArray = ["html","css","javascript","nodejs","react","figma","testing"]
-   // const [categorySearch, setCategorySearch] = useState()
+    const [categorySearch, setCategorySearch] = useState()
     const [categoryArray, setCategoryArray] = useState(initialArray)
 
-
+    const handleChange = e => {
+        const target = e.target;
+        if (target.checked) {
+          setCategorySearch(target.value);
+        }
+     };
 
     return(
         <section>
-            <RadioCategorySection categoryArray={categoryArray}/>
+            <RadioCategorySection categoryArray={categoryArray} categorySearch={categorySearch} handleChange={handleChange}/>
+            <button type="button">Search</button>
+            <h2>{categorySearch}</h2>
         </section>
 
     )
