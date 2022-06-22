@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import "./index.css"
 
 function RadioButton({category, categorySearch, handleChange }) {
