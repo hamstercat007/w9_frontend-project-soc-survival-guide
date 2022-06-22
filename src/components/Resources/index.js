@@ -1,6 +1,9 @@
 import ResourcesSearchForm from "./ResourcesSearchForm";
 
+
 function Resources() {
+
+
 
   return (
   <main>

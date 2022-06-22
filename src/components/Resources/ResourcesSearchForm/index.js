@@ -14,7 +14,7 @@ function ResourcesSearchForm() {
     let initialArray = ["html","css","javascript","nodejs","react","figma","testing"]
     const [categorySearch, setCategorySearch] = useState()
     const [categoryArray, setCategoryArray] = useState(initialArray)
-    const [searchResults, setSearchResults] = useState({payload:"Hi There"})
+    const [searchResults, setSearchResults] = useState({payload:[{headline:"Hi There"}]})
 
     const handleChange = e => {
         const target = e.target;
@@ -24,17 +24,19 @@ function ResourcesSearchForm() {
      };
 
     async function handleClick() {
-        const response = await fetch(`localhost:3001/resources?category=${categorySearch}`);
+        console.log("Button CLicked")
+        const response = await fetch(`http://localhost:3001/resources?category=${categorySearch}`);
         const data = await response.json();
-        return data
+        console.log(data)
+        setSearchResults(data)
     }
 
     return(
         <section>
             <RadioCategorySection categoryArray={categoryArray} categorySearch={categorySearch} handleChange={handleChange}/>
-            <button type="button" onClick={handleClick}>Search</button>
+            <button onClick={handleClick}>Search</button>
             <h2>{categorySearch}</h2>
-            <p>{searchResults.payload}</p>
+            <p>{searchResults.payload[0].headline}</p>
         </section>
 
     )
