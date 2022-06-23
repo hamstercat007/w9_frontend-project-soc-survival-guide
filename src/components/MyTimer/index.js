@@ -39,9 +39,10 @@ function MyTimer({ expiryTimestamp, calculateTime, customTime }) {
       <button
         onClick={() => {
           // Restarts to 5 minutes timer
-          const time = customTime;
-          console.log("I'm being clicked");
-          time.setSeconds(time.getSeconds() + customTime); //300 secons = 5 mins.
+          const time = Date.now();
+          console.log("I'm being clicked customTime", customTime);
+          // console.log(typeof(customTime))
+          time.setSeconds(time.getSeconds() + 300); //300 secons = 5 mins.
           // time.setSeconds(customTime); //300 secons = 5 mins.
           restart(time);
         }}

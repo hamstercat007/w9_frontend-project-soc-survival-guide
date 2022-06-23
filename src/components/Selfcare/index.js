@@ -12,7 +12,8 @@ function SelfCare() {
   const time = new Date();
 
   console.log("time set seconds function")
-  console.log(time.setSeconds(time.getSeconds() + 300));
+  // console.log(typeof(time.setSeconds(time.getSeconds() + 300)));
+  let newTime = time.setSeconds(time.getSeconds() + 300)
   // console.log(newTime)
 
   return (
@@ -25,7 +26,7 @@ function SelfCare() {
       />
       <p>Timer set for:</p>
       <h2>{customTime}</h2>
-      {/* <p>{newTime}</p> */}
+      <p>{newTime}</p>
     </div>
   );
 }
