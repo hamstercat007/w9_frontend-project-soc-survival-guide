@@ -42,13 +42,17 @@ blockquote p{
 }
 
 .halfSize {
-  width: 50%;
+  width: 50%
 }
+/* .halfSize img{
+    width: 373px;
+    height: 187px
+  } */
 
-.tallImage {
+/* .tallImage {
   margin-bottom: -6rem;
   margin-top: -8rem
-}
+} */
 
 
 .halfSize img {

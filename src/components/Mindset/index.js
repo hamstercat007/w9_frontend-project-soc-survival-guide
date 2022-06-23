@@ -22,7 +22,9 @@ function Mindset() {
         <blockquote className="halfSize">
           It's not about never being off balance, it's about the speed at which
           you recover
-          <p>Read the Hero's Journey</p>
+          <a href= "https://en.wikipedia.org/wiki/Hero%27s_journey#:~:text=In%20narratology%20and%20comparative%20mythology,comes%20home%20changed%20or%20transformed" target="_blank" rel="noreferrer">
+          <p>Read the Hero's Journey</p> 
+          </a>
         </blockquote>
    
       </div>
@@ -33,18 +35,14 @@ function Mindset() {
             alt="Katie Hawcutt Software Developer"
           />
           <p>Lessons learnt on my road to code…</p>
-          <a href="https://blog.schoolofcode.co.uk/lessons-learnt-on-my-road-to-code-58498d065e34">
+          <a href="https://blog.schoolofcode.co.uk/lessons-learnt-on-my-road-to-code-58498d065e34" target="_blank" rel="noreferrer">
             <button>Learn More</button>
           </a>
         </div>
         <div className="halfSize">
-          <img
-            src="https://img.freepik.com/free-vector/sack-money-big-pile-cash-money-icon-illustration-money-bag-flat-icon_385450-362.jpg"
-            alt="Money"
-            className="tallImage"
-          />
+            <img src="https://i.ibb.co/0BGKZkX/Screenshot-2022-06-23-at-10-08-34.png" style={{width:"73%"}} alt="#"/>
           <p>Software Developer Salary Report</p>
-          <a href="https://marketing-pictures.s3-eu-west-1.amazonaws.com/Salary+Report+2021/Salary_Report_EU-EN_2021_talent.io.pdf" >
+          <a href="https://marketing-pictures.s3-eu-west-1.amazonaws.com/Salary+Report+2021/Salary_Report_EU-EN_2021_talent.io.pdf" target="_blank" rel="noreferrer" >
             <button>Learn More</button>
           </a>
         </div>
