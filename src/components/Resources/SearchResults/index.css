@@ -11,3 +11,8 @@
   background-color: rgba(8, 249, 24, 0.86);
 }
 
+.viewbox{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}

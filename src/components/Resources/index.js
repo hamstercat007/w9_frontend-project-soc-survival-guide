@@ -48,9 +48,9 @@ function Resources() {
           categorySearch={categorySearch}
           handleChange={handleChange}
         />
-          <SearchResults searchResults={searchResults} />
-      </div>
       <SubmitResource />
+      </div>
+          <SearchResults searchResults={searchResults} />
     </div>
   );
 }

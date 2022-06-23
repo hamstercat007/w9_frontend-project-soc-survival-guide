@@ -6,11 +6,11 @@ import {useState} from "react";
 function SearchResults({ searchResults }) {
   const [position, setPosition] = useState(0)
 
-  let displayedArray = searchResults.slice(position,position+7)
+  let displayedArray = searchResults.slice(position,position+8)
 
   function nextButton(){
     if (position < searchResults.length){
-      setPosition(position+7)
+      setPosition(position+8)
     } else{
       return
     }
@@ -18,21 +18,26 @@ function SearchResults({ searchResults }) {
 
   function previousButton(){
     if (position > 0){
-      setPosition(position-7)
+      setPosition(position-8)
     } else{
       return
     }
   }
 
   function createResultItem(item, index){
-    return<ResultItem properties={item} key={index} />
+    return<div className="searchResults">
+      <ResultItem properties={item} key={index} />
+    </div>
   }
   return (
-    <div className="searchResults">
+    <div>
+    <div className="viewbox">
     {displayedArray.map(createResultItem)}
+    </div>
     <button type="button" onClick={previousButton}>Previous</button>
     <button type="button" onClick={nextButton}>Next</button>
     </div>
+    
  
   );
 }
