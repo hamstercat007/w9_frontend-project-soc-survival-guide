@@ -5,6 +5,10 @@ alignment with first image and paragraph
 two other images underneath with onClick to external link
 wrap image in anchor tag and hardcode into jsx
 
+//link the hero's journey to the pdf
+//software salary image - replace it, download and import the image
+//import all images 
+
 */
 import "./index.css";
 
@@ -24,7 +28,6 @@ function Mindset() {
           you recover
           <p>Read the Hero's Journey</p>
         </blockquote>
-   
       </div>
       <div className="flexRowMindset">
         <div className="halfSize">
@@ -44,7 +47,7 @@ function Mindset() {
             className="tallImage"
           />
           <p>Software Developer Salary Report</p>
-          <a href="https://marketing-pictures.s3-eu-west-1.amazonaws.com/Salary+Report+2021/Salary_Report_EU-EN_2021_talent.io.pdf" >
+          <a href="https://marketing-pictures.s3-eu-west-1.amazonaws.com/Salary+Report+2021/Salary_Report_EU-EN_2021_talent.io.pdf">
             <button>Learn More</button>
           </a>
         </div>
