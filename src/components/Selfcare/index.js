@@ -14,6 +14,8 @@ function SelfCare() {
     <div>
       <h1>Take care of yourself</h1>
       <MyTimer expiryTimestamp={time} calculateTime={calculateTime} />
+      <p>Timer set for:</p>
+      <h2>{customTime}</h2>
     </div>
   );
 }
