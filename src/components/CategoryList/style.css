@@ -1,6 +1,6 @@
 
 .flexCategory {
     display: flex;
-    padding: 1rem;
+    padding: 0 1rem;
     margin:auto
 }

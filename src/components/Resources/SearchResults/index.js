@@ -34,8 +34,8 @@ function SearchResults({ searchResults }) {
     <div className="viewbox">
     {displayedArray.map(createResultItem)}
     </div>
-    <button type="button" onClick={previousButton}>Previous</button>
-    <button type="button" onClick={nextButton}>Next</button>
+    <button type="button" onClick={previousButton} className="inputButtons" style={{width:"7rem"}}>Previous</button>
+    <button type="button" onClick={nextButton} className="inputButtons" style={{width:"7rem"}}>Next</button>
     </div>
     
  
