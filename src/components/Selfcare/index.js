@@ -11,13 +11,21 @@ function SelfCare() {
 
   const time = new Date();
 
-  time.setSeconds(time.getSeconds() + customTime);
+  console.log("time set seconds function")
+  console.log(time.setSeconds(time.getSeconds() + 300));
+  // console.log(newTime)
+
   return (
     <div>
       <h1>Take care of yourself</h1>
-      <MyTimer expiryTimestamp={time} calculateTime={calculateTime} customTime = {customTime} />
+      <MyTimer
+        expiryTimestamp={time}
+        calculateTime={calculateTime}
+        customTime={customTime}
+      />
       <p>Timer set for:</p>
       <h2>{customTime}</h2>
+      {/* <p>{newTime}</p> */}
     </div>
   );
 }
