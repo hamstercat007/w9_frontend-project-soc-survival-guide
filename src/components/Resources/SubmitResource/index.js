@@ -16,8 +16,8 @@ function SubmitResource() {
     setSubmission({ ...submission, [e.target.name]: e.target.value.trim() });
   };
 
-  async function handleSubmit() {
-    await fetch(`http://localhost:3001/resources`, {
+  async function handleSubmit() {    
+    await fetch(`http://localhost:3001/api/v1/resources`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
