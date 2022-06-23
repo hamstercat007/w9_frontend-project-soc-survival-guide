@@ -1,14 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useTimer } from "react-timer-hook";
 import { useState } from "react";
 
-//create input field to ask the user how long would they like in minutes
-//get time, update time = state
 
-function MyTimer({ expiryTimestamp, calculateTime, customTime }) {
+function MyTimer({setTimesUp}) {
   const [customHour, setCustomHour] = useState(0);
   const [customMinute, setCustomMinute] = useState(0);
   const [customSecond, setCustomSecond] = useState(0);
+  const [customTime, setCustomTime] = useState(600);
+
+  const expiryTimestamp = new Date(); //there is no plus 300 seconds
+
+  function calculateTime() {
+    setCustomTime(
+      Number(customHour) * 3600 +
+        Number(customMinute) * 60 +
+        Number(customSecond)
+    );
+  }
 
   const {
     seconds,
@@ -21,9 +30,29 @@ function MyTimer({ expiryTimestamp, calculateTime, customTime }) {
     resume,
     restart,
   } = useTimer({
-    expiryTimestamp,
-    onExpire: () => console.warn("onExpire called"),
+    autoStart: false,
+    expiryTimestamp: expiryTimestamp, //expire at this time, which is now, so it won't start.
+    onExpire: () => setTimesUp(true)
   });
+
+  useEffect(() => {
+    calculateTime();
+    secondsToHms();
+  }, [customSecond, customMinute, customHour]);
+
+  function secondsToHms() {
+    let d = customTime;
+    var h = Math.floor(d / 3600);
+    var m = Math.floor((d % 3600) / 60);
+    var s = Math.floor((d % 3600) % 60);
+
+    var hDisplay = h > 0 ? h + (h === 1 ? " hour, " : " hours, ") : "";
+    var mDisplay = m > 0 ? m + (m === 1 ? " minute, " : " minutes, ") : "";
+    var sDisplay = s > 0 ? s + (s === 1 ? " second" : " seconds") : "";
+    return hDisplay + mDisplay + sDisplay;
+  }
+
+  // console.log("customTime", customTime)
 
   return (
     <div style={{ textAlign: "center" }}>
@@ -33,21 +62,18 @@ function MyTimer({ expiryTimestamp, calculateTime, customTime }) {
         <span>{seconds}</span>
       </div>
       <p>{isRunning ? "Running" : "Not running"}</p>
-      <button onClick={start}>Start</button>
+      {/* <button onClick={start}>Start</button>  */}
       <button onClick={pause}>Pause</button>
       <button onClick={resume}>Resume</button>
       <button
         onClick={() => {
           // Restarts to 5 minutes timer
-          const time = Date.now();
-          console.log("I'm being clicked customTime", customTime);
-          // console.log(typeof(customTime))
-          time.setSeconds(time.getSeconds() + 300); //300 secons = 5 mins.
-          // time.setSeconds(customTime); //300 secons = 5 mins.
+          const time = new Date();
+          time.setSeconds(time.getSeconds() + customTime); //300 secons = 5 mins.
           restart(time);
         }}
       >
-        Restart
+        Start
       </button>
       <div style={{ marginTop: "1rem" }}>
         <form>
@@ -75,16 +101,10 @@ function MyTimer({ expiryTimestamp, calculateTime, customTime }) {
             value={customSecond}
             onChange={(e) => setCustomSecond(e.target.value)}
           />
-          <input
-            type="button"
-            value="Set my time"
-            style={{ marginLeft: "1rem" }}
-            onClick={() => {
-              calculateTime(customSecond, customMinute, customHour);
-            }}
-          />
         </form>
       </div>
+      <p>Timer set for:</p>
+      <h2>{secondsToHms()}</h2>
     </div>
   );
 }
