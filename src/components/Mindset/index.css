@@ -56,15 +56,3 @@ blockquote p{
   height: 100%
 }
 
-
-
-.row-two {
-    display: flex;
-}
-
-
-
-/* Add rounded corners to the top left and the top right corner of the image */
-/* img {
-  border-radius: 5px 5px 0 0;
-} */
