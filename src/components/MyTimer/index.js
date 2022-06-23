@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import { useTimer } from "react-timer-hook";
 import { useState } from "react";
+import "./index.css"
 
-
-function MyTimer({setTimesUp}) {
+function MyTimer({ setTimesUp }) {
   const [customHour, setCustomHour] = useState(0);
   const [customMinute, setCustomMinute] = useState(0);
   const [customSecond, setCustomSecond] = useState(0);
@@ -32,7 +32,7 @@ function MyTimer({setTimesUp}) {
   } = useTimer({
     autoStart: false,
     expiryTimestamp: expiryTimestamp, //expire at this time, which is now, so it won't start.
-    onExpire: () => setTimesUp(true)
+    onExpire: () => setTimesUp(true),
   });
 
   useEffect(() => {
@@ -63,9 +63,10 @@ function MyTimer({setTimesUp}) {
       </div>
       <p>{isRunning ? "Running" : "Not running"}</p>
       {/* <button onClick={start}>Start</button>  */}
-      <button onClick={pause}>Pause</button>
-      <button onClick={resume}>Resume</button>
+      <button className="inputButtons"onClick={pause}>Pause</button>
+      <button className="inputButtons"onClick={resume}>Resume</button>
       <button
+        className="inputButtons"
         onClick={() => {
           // Restarts to 5 minutes timer
           const time = new Date();
@@ -77,28 +78,33 @@ function MyTimer({setTimesUp}) {
       </button>
       <div style={{ marginTop: "1rem" }}>
         <form>
-          <label htmlFor="hour">Hour</label>
+          <label htmlFor="hour" className="inputFields">
+            Hour
+          </label>
           <input
             type="number"
             id="hour"
             name="hour"
             value={customHour}
+            className="inputFields"
             onChange={(e) => setCustomHour(e.target.value)}
           />
-          <label htmlFor="minute">Minutes</label>
+          <label htmlFor="minute" className="inputFields">Minutes</label>
           <input
             type="number"
             id="minute"
             name="minute"
             value={customMinute}
+            className="inputFields"
             onChange={(e) => setCustomMinute(e.target.value)}
           />
-          <label htmlFor="second">Seconds</label>
+          <label htmlFor="second" className="inputFields">Seconds</label>
           <input
             type="number"
             id="second"
             name="second"
             value={customSecond}
+            className="inputFields"
             onChange={(e) => setCustomSecond(e.target.value)}
           />
         </form>
