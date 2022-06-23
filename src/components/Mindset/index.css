@@ -1,0 +1,74 @@
+/* *, *:before, *:after {
+  box-sizing: border-box;
+} */
+
+/* body {
+  box-sizing: border-box;
+  margin-bottom: 6rem;
+} */
+
+.mindset-h1 {
+  font-size: 4rem;
+  margin-bottom: -0.8rem;
+  margin-top: -1px
+}
+.flexRowMindset {
+    display: flex;
+    margin: 0 2rem; 
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 50vh;
+}
+/* .row-1 blockquote {
+   width: 40%;
+   margin: auto;
+   font-size: 2rem;
+} */
+
+/* .flexRow blockquote {
+  width: 40%;
+  font-size: 2.5rem;
+  align-items: center;
+} */
+
+blockquote {
+  font-size: 2.5rem;
+}
+
+blockquote p{
+  font-size: 2rem;
+}
+
+.halfSize {
+  width: 50%
+}
+/* .halfSize img{
+    width: 373px;
+    height: 187px
+  } */
+
+/* .tallImage {
+  margin-bottom: -6rem;
+  margin-top: -8rem
+} */
+
+
+.halfSize img {
+  width: 80%;
+  height: 100%
+}
+
+
+
+.row-two {
+    display: flex;
+}
+
+
+
+/* Add rounded corners to the top left and the top right corner of the image */
+/* img {
+  border-radius: 5px 5px 0 0;
+} */

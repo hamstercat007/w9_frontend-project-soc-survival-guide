@@ -1,5 +1,6 @@
+
 .flexed {
     display: flex;
     padding: 1rem;
-    margin: 1rem;
+    margin:auto
 }
