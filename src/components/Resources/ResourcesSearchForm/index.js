@@ -9,6 +9,7 @@ State variable can be kept local
 
 import { useState } from "react";
 import RadioCategorySection from "../RadioCategorySection";
+import "./index.css";
 
 function ResourcesSearchForm({
   handleClick,
@@ -29,14 +30,14 @@ function ResourcesSearchForm({
   const [categoryArray, setCategoryArray] = useState(initialArray);
 
   return (
-    <section>
+    <div>
       <RadioCategorySection
         categoryArray={categoryArray}
         categorySearch={categorySearch}
         handleChange={handleChange}
       />
       <button onClick={handleClick}>Search</button>
-    </section>
+    </div>
   );
 }
 
