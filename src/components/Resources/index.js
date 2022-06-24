@@ -6,7 +6,7 @@ import "./index.css";
 
 function Resources() {
   const [searchResults, setSearchResults] = useState([]);
-  const [categorySearch, setCategorySearch] = useState();
+  const [categorySearch, setCategorySearch] = useState("Html");
 
   useEffect(() => {
     async function getAll() {
