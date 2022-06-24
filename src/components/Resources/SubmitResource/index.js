@@ -23,7 +23,7 @@ function SubmitResource() {
         return alert("Error: Missing input field");
       }
     }
-    await fetch(`http://socsurvivalguideapi/api/v1/resources`, {
+    await fetch(`https://socsurvivalguideapi.herokuapp.com/api/v1/resources`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

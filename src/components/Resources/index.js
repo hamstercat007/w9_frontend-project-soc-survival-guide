@@ -10,7 +10,7 @@ function Resources() {
 
   useEffect(() => {
     async function getAll() {
-      const response = await fetch(`http://localhost:3001/api/v1/resources`);
+      const response = await fetch(`https://socsurvivalguideapi.herokuapp.com/api/v1/resources`);
       const data = await response.json();
       setSearchResults(data.payload);
     }
@@ -19,7 +19,7 @@ function Resources() {
 
   async function handleClick() {
     const response = await fetch(
-      `http://localhost:3001/api/v1/resources?category=${categorySearch}`
+      `https://socsurvivalguideapi.herokuapp.com/api/v1/resources?category=${categorySearch}`
     );
     const data = await response.json();
     console.log("data.payload");
