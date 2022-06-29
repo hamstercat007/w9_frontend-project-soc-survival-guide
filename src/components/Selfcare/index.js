@@ -23,6 +23,7 @@ function SelfCare() {
           <h2>Other Resources</h2>
           <ul>
             <a
+              data-testid="yoga1"
               href="https://www.youtube.com/watch?v=ngQxxLnJ-5I"
               style={{ textDecoration: "none" }}
             >
