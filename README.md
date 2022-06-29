@@ -1,6 +1,28 @@
 # SOC Survival Guide Front End
 
+This is the Front End repository for a Full Stack Application to help School of Code Bootcampers 
+throughout their learning journey by providing learning resources, inspirational
+quotes, a Mindset page to motivate students, and a Self Care page with a timer you can set to remind you to take breaks,
+and when trying to keep active through suggested exercise activities.
 
+To work efficiently, this must hook up to a Back-End Server found in this repository:
+https://github.com/SchoolOfCode/w9_backend-project-nott-in-london.git
+
+
+## API Reference
+
+#### Quotes API used
+
+  https://type.fit/api/quotes
+
+#### Fetch all resources API
+
+  http://localhost:3001/api/v1/resources
+
+
+## Demo for Front-End
+
+http://socsurvivalguide.herokuapp.com/
 
 ## Run Locally
 
@@ -34,9 +56,13 @@ To run tests, run the following command
 
 ## Architecture
 
-
-
-
+- APP
+    - QUOTE
+    - RESOURCES
+    - SELF CARE
+        - MY TIMER
+    - MINDSET
+    
 
 ## Authors
 
