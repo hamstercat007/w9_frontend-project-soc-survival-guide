@@ -4,7 +4,6 @@ import Quote from "../Quote";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Mindset from "../Mindset";
 import Resources from "../Resources";
-// import Selfcare from "../Selfcare";
 import SelfCare from "../Selfcare";
 
 function App() {
@@ -17,7 +16,7 @@ function App() {
             element={
               <>
                 <CategoryList />
-                <Quote />{" "}
+                <Quote />
               </>
             }
           />
