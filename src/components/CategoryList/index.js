@@ -1,5 +1,5 @@
 import CategoryItem from "../CategoryItem";
-import "./style.css";
+import "./index.css";
 import mindset from "./mindsetSmal.jpeg";
 import { useNavigate } from "react-router-dom";
 import resource from "./resource.jpg";

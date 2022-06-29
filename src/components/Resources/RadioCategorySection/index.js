@@ -2,6 +2,9 @@ import RadioButton from "../RadioButton";
 import "./index.css";
 
 function RadioCategorySection({ categoryArray, categorySearch, handleChange }) {
+  //We are splitting the categoryArray into 2 for formatting purposes,
+  //origninally it would produce one long list and there were issues with flex wrap,
+  //so it was easier for us to split the array here to make two columns
   let arrayOne = categoryArray.slice(0, categoryArray.length / 2);
   let arrayTwo = categoryArray.slice(
     categoryArray.length / 2,
@@ -10,13 +13,15 @@ function RadioCategorySection({ categoryArray, categorySearch, handleChange }) {
 
   return (
     <form className="categoryBox">
-      <legend><h2>Category</h2></legend>
+      <legend>
+        <h2>Category</h2>
+      </legend>
       <div className="container">
         <div className="column">
-          {arrayTwo.map(function (topic) {
+          {arrayTwo.map(function (resourceCategory) {
             return (
               <RadioButton
-                category={topic}
+                category={resourceCategory}
                 categorySearch={categorySearch}
                 handleChange={handleChange}
               />
@@ -24,10 +29,10 @@ function RadioCategorySection({ categoryArray, categorySearch, handleChange }) {
           })}
         </div>
         <div className="column">
-          {arrayOne.map(function (topic) {
+          {arrayOne.map(function (resourceCategory) {
             return (
               <RadioButton
-                category={topic}
+                category={resourceCategory}
                 categorySearch={categorySearch}
                 handleChange={handleChange}
               />
@@ -35,9 +40,6 @@ function RadioCategorySection({ categoryArray, categorySearch, handleChange }) {
           })}
         </div>
       </div>
-      {/* {categoryArray.map(function(topic){
-            return (<RadioButton category={topic} />)
-        })} */}
     </form>
   );
 }
