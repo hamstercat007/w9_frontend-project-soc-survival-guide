@@ -70,5 +70,5 @@ To run tests, run the following command
 #### Lisa Mac[https://github.com/hamstercat007]
 #### Miguel Lamas[https://github.com/MiguelLamas]
 #### Mohamed Ali[https://github.com/CodeNameMoe]
-#### Mutaz Obsiye [https://github.com/MumtazO]
+#### Mumtaz Obsiye [https://github.com/MumtazO]
 
