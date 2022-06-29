@@ -9,7 +9,7 @@ function SelfCare() {
   if (timesUp === false) {
     return (
       <div>
-        <h1 style={{fontSize: "3rem"}}>Take care of yourself</h1>
+        <h1 style={{ fontSize: "3rem" }}>Take care of yourself</h1>
         <div style={{ display: "flex" }}>
           <div>
             <img style={{ height: "45vh" }} src={squats} alt="squats" />

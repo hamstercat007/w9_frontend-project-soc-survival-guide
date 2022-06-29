@@ -1,11 +1,5 @@
-/*
-1. create our array of objects, that we will map over.
-category compenent - list component
-function that gives us a button that we can reuse
-return into a div container
-*/
 import CategoryItem from "../CategoryItem";
-import "./style.css";
+import "./index.css";
 import mindset from "./mindsetSmal.jpeg";
 import { useNavigate } from "react-router-dom";
 import resource from "./resource.jpg";

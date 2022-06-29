@@ -18,68 +18,67 @@ function SubmitResource() {
 
   async function handleSubmit() {
     let entries = Object.values(submission);
-    for (let i = 0; i < entries.length; i++){
-      if(entries[i] === "" || entries[i] === undefined){
-        return alert("Error: Missing input field")
+    for (let i = 0; i < entries.length; i++) {
+      if (entries[i] === "" || entries[i] === undefined) {
+        return alert("Error: Missing input field");
       }
-    } 
+    }
     await fetch(`http://localhost:3001/api/v1/resources`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(submission),
-    }
-    );
+    });
     setSubmission({
       headline: "",
       description: "",
       url: "",
       category: "",
       format: "",
-    })
+    });
   }
   return (
-      <form method="POST" className="submitFlex">
-        <label htmlFor="headline" className="inputFields">
-          Headline
-        </label>
-        <input
-          type="text"
-          id="headline"
-          name="headline"
-          placeholder="Name"
-          value={submission.headline}
-          onChange={handleChange}
-          className="inputFields"
-        ></input>
-        <label htmlFor="description" className="inputFields">
-          Description
-        </label>
-        <input
-          type="text"
-          id="description"
-          name="description"
-          size="50"
-          placeholder="Brief Description"
-          value={submission.description}
-          className="inputFields"
-          onChange={handleChange}
-        ></input>
-        <label htmlFor="url" className="inputFields">
-          URL
-        </label>
-        <input
-          type="text"
-          id="url"
-          name="url"
-          size="50"
-          placeholder="link goes here"
-          value={submission.url}
-          className="inputFields"
-          onChange={handleChange}
-        ></input>
-        <div>
+    <form method="POST" className="submitFlex">
+      <label htmlFor="headline" className="inputFields">
+        Headline
+      </label>
+      <input
+        type="text"
+        id="headline"
+        name="headline"
+        placeholder="Name"
+        value={submission.headline}
+        onChange={handleChange}
+        className="inputFields"
+      ></input>
+      <label htmlFor="description" className="inputFields">
+        Description
+      </label>
+      <input
+        type="text"
+        id="description"
+        name="description"
+        size="50"
+        placeholder="Brief Description"
+        value={submission.description}
+        className="inputFields"
+        onChange={handleChange}
+      ></input>
+      <label htmlFor="url" className="inputFields">
+        URL
+      </label>
+      <input
+        type="text"
+        id="url"
+        name="url"
+        size="50"
+        placeholder="link goes here"
+        value={submission.url}
+        className="inputFields"
+        onChange={handleChange}
+      ></input>
+      <div>
         <label htmlFor="category" className="inputFields">
           Category
         </label>
@@ -93,8 +92,8 @@ function SubmitResource() {
           className="inputFields"
           onChange={handleChange}
         ></input>
-        </div>
-        <div>
+      </div>
+      <div>
         <label htmlFor="format" className="inputFields">
           Format
         </label>
@@ -107,11 +106,11 @@ function SubmitResource() {
           className="inputFields"
           onChange={handleChange}
         ></input>
-        </div>
-        <button type="button" onClick={handleSubmit} className="inputFields">
-          Submit
-        </button>
-      </form>
+      </div>
+      <button type="button" onClick={handleSubmit} className="inputFields">
+        Submit
+      </button>
+    </form>
   );
 }
 
