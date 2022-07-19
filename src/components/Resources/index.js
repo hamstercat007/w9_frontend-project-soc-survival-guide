@@ -9,12 +9,12 @@ function Resources() {
   const [categorySearch, setCategorySearch] = useState("Html");
 
   useEffect(() => {
-    async function getAll() {
+    async function getAllResources() {
       const response = await fetch(`https://socsurvivalguideapi.herokuapp.com/api/v1/resources`);
       const data = await response.json();
       setSearchResults(data.payload);
     }
-    getAll();
+    getAllResources();
   }, []);
 
   async function handleClick() {
@@ -48,9 +48,9 @@ function Resources() {
           categorySearch={categorySearch}
           handleChange={handleChange}
         />
-      <SubmitResource />
+        <SubmitResource />
       </div>
-          <SearchResults searchResults={searchResults} />
+      <SearchResults searchResults={searchResults} />
     </div>
   );
 }
