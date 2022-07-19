@@ -1,4 +1,5 @@
 import "./index.css";
+import hero from "./heros-journey.jpeg"
 
 function Mindset() {
   return (
@@ -11,15 +12,16 @@ function Mindset() {
             alt="People doing karate at dawn"
           />
         </div>
-        <blockquote className="halfSize">
+        <blockquote className="halfSize" style={{fontFamily: "serif"}}>
           It's not about never being off balance, it's about the speed at which
           you recover
           <a
-            href="https://en.wikipedia.org/wiki/Hero%27s_journey#:~:text=In%20narratology%20and%20comparative%20mythology,comes%20home%20changed%20or%20transformed"
+            href={hero}
             target="_blank"
             rel="noreferrer"
-          >
-            <p>Read the Hero's Journey</p>
+          ><br></br>
+          <br></br>
+            <button>Read the Hero's Journey</button>
           </a>
         </blockquote>
       </div>

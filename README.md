@@ -29,13 +29,13 @@ http://socsurvivalguide.herokuapp.com/
 Clone the project
 
 ```bash
-  git clone https://github.com/SchoolOfCode/w9_frontend-project-nott-in-london
+  git clone https://github.com/SchoolOfCode/w9_frontend-project-soc-survival-guide
 ```
 
 Go to the project directory
 
 ```bash
-  cd w9_frontend-project-nott-in-london
+  cd w9_frontend-project-soc-survival-guide
 ```
 
 Install dependencies

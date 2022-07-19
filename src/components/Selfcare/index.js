@@ -19,37 +19,20 @@ function SelfCare() {
             <MyTimer setTimesUp={setTimesUp} />
           </div>
         </div>
-        <div style={{ display: "flex", flexDirection: "column" }}>
+        <div style={{ display: "flex", flexDirection: "column"}}>
           <h2>Other Resources</h2>
           <ul>
             <a
-              data-testid="yoga1"
               href="https://www.youtube.com/watch?v=ngQxxLnJ-5I"
-              style={{ textDecoration: "none" }}
-            >
-              <li
-                style={{
-                  marginBottom: "1rem",
-                  fontSize: "2rem",
-                  listStyle: "none",
-                }}
               >
+              <button style={{marginRight: "2rem"}}>
                 Yoga: 10 mins of yoga
-              </li>
+                </button>
             </a>
-            <a
-              href="https://www.youtube.com/watch?v=EvTJqhVfBR4"
-              style={{ textDecoration: "none" }}
-            >
-              <li
-                style={{
-                  marginBottom: "1rem",
-                  fontSize: "2rem",
-                  listStyle: "none",
-                }}
-              >
-                Qigong - aids breathing and calms the mind
-              </li>
+            <a href="https://www.youtube.com/watch?v=EvTJqhVfBR4">
+            <button>
+              Qigong - aids breathing and calms the mind
+            </button>
             </a>
           </ul>
         </div>

@@ -7,11 +7,3 @@ test("A link renders on the page", () => {
   const yogaLink = screen.getByText(/Yoga/);
   expect(yogaLink).toBeInTheDocument();
 });
-
-test("the yoga link has the yoga video address", () => {
-  render(<SelfCare />);
-  expect(screen.getByTestId("yoga1")).toHaveAttribute(
-    "href",
-    "https://www.youtube.com/watch?v=ngQxxLnJ-5I"
-  );
-});

@@ -2,3 +2,16 @@ a:hover {
   color: lightseagreen;
 }
 
+button {
+  background-color: rgb(189, 243, 107);
+  border-radius: 10px;
+  box-shadow: 3px 5px;
+  padding: 1rem;
+  border: 2px solid black;
+}
+
+button:hover {
+  background-color: rgba(8, 249, 24, 0.86);
+}
+
+
