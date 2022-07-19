@@ -9,7 +9,7 @@ function SelfCare() {
   if (timesUp === false) {
     return (
       <div>
-        <h1 style={{fontSize: "3rem"}}>Take care of yourself</h1>
+        <h1 style={{ fontSize: "3rem" }}>Take care of yourself</h1>
         <div style={{ display: "flex" }}>
           <div>
             <img style={{ height: "45vh" }} src={squats} alt="squats" />
@@ -23,6 +23,7 @@ function SelfCare() {
           <h2>Other Resources</h2>
           <ul>
             <a
+              data-testid="yoga1"
               href="https://www.youtube.com/watch?v=ngQxxLnJ-5I"
               style={{ textDecoration: "none" }}
             >

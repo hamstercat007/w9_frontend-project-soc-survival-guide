@@ -1,12 +1,3 @@
-/*
-MVP
-Radio buttons for the categories
-    -Each radio button will have a value of a cateogry, which ever is pressed, will change a state variable to that value
-Submit Button
-    -Makes a get fetch request with a query of category="State Variable"
-State variable can be kept local
-*/
-
 import { useState } from "react";
 import RadioCategorySection from "../RadioCategorySection";
 import "./index.css";
@@ -27,7 +18,7 @@ function ResourcesSearchForm({
     "testing",
   ];
 
-  const [categoryArray, setCategoryArray] = useState(initialArray);
+  const [categoryArray, setCategoryArray] = useState(initialArray);//Future plans to not hard code category to search by displayed
 
   return (
     <div>

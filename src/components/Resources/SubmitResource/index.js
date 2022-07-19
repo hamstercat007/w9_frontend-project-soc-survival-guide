@@ -23,6 +23,7 @@ function SubmitResource() {
         return alert("Error: Missing input field");
       }
     }
+    
     await fetch(`https://socsurvivalguideapi.herokuapp.com/api/v1/resources`, {
       method: "POST",
       headers: {

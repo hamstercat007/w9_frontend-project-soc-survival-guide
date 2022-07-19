@@ -1,15 +1,16 @@
 import React, { useEffect } from "react";
 import { useTimer } from "react-timer-hook";
 import { useState } from "react";
-import "./index.css"
+import "./index.css";
 
+// Using features found in https://www.npmjs.com/package/react-timer-hook
 function MyTimer({ setTimesUp }) {
   const [customHour, setCustomHour] = useState(0);
   const [customMinute, setCustomMinute] = useState(0);
   const [customSecond, setCustomSecond] = useState(0);
   const [customTime, setCustomTime] = useState(600);
 
-  const expiryTimestamp = new Date(); //there is no plus 300 seconds
+  const expiryTimestamp = new Date(); 
 
   function calculateTime() {
     setCustomTime(
@@ -52,8 +53,6 @@ function MyTimer({ setTimesUp }) {
     return hDisplay + mDisplay + sDisplay;
   }
 
-  // console.log("customTime", customTime)
-
   return (
     <div style={{ textAlign: "center" }}>
       <h1>My Timer </h1>
@@ -62,15 +61,17 @@ function MyTimer({ setTimesUp }) {
         <span>{seconds}</span>
       </div>
       <p>{isRunning ? "Running" : "Not running"}</p>
-      {/* <button onClick={start}>Start</button>  */}
-      <button className="inputButtons"onClick={pause}>Pause</button>
-      <button className="inputButtons"onClick={resume}>Resume</button>
+      <button className="inputButtons" onClick={pause}>
+        Pause
+      </button>
+      <button className="inputButtons" onClick={resume}>
+        Resume
+      </button>
       <button
         className="inputButtons"
         onClick={() => {
-          // Restarts to 5 minutes timer
           const time = new Date();
-          time.setSeconds(time.getSeconds() + customTime); //300 secons = 5 mins.
+          time.setSeconds(time.getSeconds() + customTime);
           restart(time);
         }}
       >
@@ -89,7 +90,9 @@ function MyTimer({ setTimesUp }) {
             className="inputFields"
             onChange={(e) => setCustomHour(e.target.value)}
           />
-          <label htmlFor="minute" className="inputFields">Minutes</label>
+          <label htmlFor="minute" className="inputFields">
+            Minutes
+          </label>
           <input
             type="number"
             id="minute"
@@ -98,7 +101,9 @@ function MyTimer({ setTimesUp }) {
             className="inputFields"
             onChange={(e) => setCustomMinute(e.target.value)}
           />
-          <label htmlFor="second" className="inputFields">Seconds</label>
+          <label htmlFor="second" className="inputFields">
+            Seconds
+          </label>
           <input
             type="number"
             id="second"

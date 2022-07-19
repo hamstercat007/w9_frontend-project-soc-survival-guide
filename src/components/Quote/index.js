@@ -1,7 +1,3 @@
-//Quote function component, and within it fetch request
-//Create async function with fetch api https://zenquotes.io/api/today/[your_key]
-//unpack this with json and render it in usable format
-//call it
 import { useEffect, useState } from "react";
 import "./index.css";
 
