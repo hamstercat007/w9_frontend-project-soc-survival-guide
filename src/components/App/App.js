@@ -5,11 +5,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Mindset from "../Mindset";
 import Resources from "../Resources";
 import SelfCare from "../Selfcare";
+import NavBar from "../NavBar/NavBar";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+      <NavBar />
         <Routes>
           <Route
             path="/"
